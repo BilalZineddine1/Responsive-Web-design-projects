@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Personality Survey Form</h1>
+      <p id="description">By answering this questions you can have a clear view about your personality </p>
+    </header>  
+    <form id="survey-form">
+      <section id="personal-info">
+       <label for="name" id="name-label" class="text">Name </label>
+       <input id="name" class="personal-info" type="text" placeholder="Enter your name" value="name" required/>
+       <label for="email" id="email-label" class="text" >Email</label>
+       <input id="email" class="personal-info" type="email" placeholder="Enter your Email" value="email" required />
+       <label id="number-label" class="text">Age</label>
+       <input type="number" class="personal-info" id="number" placeholder="Age" required min="13" max="120" />
+      <label class="text">Which option best describes your current role?</label>
+         <select id="dropdown" name="dropdown">
+           <option value="">Select current role</option>
+           <option value="1">Student</option>
+           <option value="2">Full Time Job</option>
+           <option value="3">Full Time Learner</option>
+           <option value="4">Perfer not to say</option>
+           <option value="5">Other</option>
+         </select>
+      </section>
+      <section id="recom">  
+      <p class="text">Would you recommend this survey form to a friend?</p>
+        <div><input type="radio" name="recommend" class="inline" value="1"/>
+        <label class="recomendation">Definitely</label>
+        </div>
+        <div>
+        <input type="radio" name="recommend" class="inline" value="2"/><label>Maybe</label>
+        </div>
+        <div>
+        <input type="radio" name="recommend" class="inline" value="3"/><label>Not sure</label>
+        </div>
+      </section>
+      <section id="questions">
+      <label class="text">Do you have any problem being around people?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="">--Select an option--</option>
+          <option value="1">Of course</option>
+          <option value="2">Some times</option>
+          <option value="3">Not at all</option>
+        </select>
+      <div class="block"><p class="text">Do you love talking?</p>
+        <div><input id="improvement" name="improvement" type="checkbox" class="inline" value="1"/><label>Yes</label></div>
+        <div><input id="improvement" name="improvement" type="checkbox" class="inline" value="2"/><label>No</label></div>
+        </div>
+        <div class="block">
+        <p class="text">Do you love details ?</p>
+        <div><input id="improvement" name="improvement" type="checkbox" class="inline" value="3"/><label>Yes</label></div>
+        <div><input id="improvement" name="improvement" type="checkbox" class="inline" value="4"/><label>No</label></div>
+        </div>
+        <div class="block">
+        <p class="text">Is your mood chages a lot ?</p>
+        <div>
+        <input id="improvement" name="improvement" type="checkbox" class="inline" value="5"/><label>Yes</label></div>
+        <div><input id="improvement" name="improvement" type="checkbox" class="inline" value="6"/><label>No</label></div>
+        </div>
+        <div class="block">
+        <p class="text">Are you good at communicating with people ?</p>
+        <div>
+        <input id="improvement" name="improvement" type="checkbox" class="inline" value="7"/><label>Yes</label></div>
+        <div>
+          <input id="improvement" name="improvement" type="checkbox" class="inline" value="8"/><label>No</label></div>
+          </div>
+          <div class="block">
+        <p class="text">Do you like being scheduled ?</p>
+        <div>
+        <input id="improvement" name="improvement" type="checkbox" class="inline" value="9"/><label>Yes</label></div>
+        <div>
+        <input id="improvement" name="improvement" type="checkbox" class="inline" value="10"/><label>No</label>
+      </div>
+      </div>
+    </section>  
+      <label class="text">Describe your self here?</label>
+          <textarea id="suggestions" name="suggestions" placeholder="Hi I'm ..."></textarea>
+      <input type="submit" value="Submit" id="submit" />
+   </form> 
+  </body>
+</html>  
